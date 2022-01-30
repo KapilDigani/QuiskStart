@@ -1,0 +1,15 @@
+connector:
+  name: GitX DR
+  identifier: GitX_DR
+  description:
+  orgIdentifier: default
+  projectIdentifier: GitX_QS
+  type: DockerRegistry
+  spec:
+    dockerRegistryUrl: https://registry.hub.docker.com/v2/
+    providerType: DockerHub
+    auth:
+      type: UsernamePassword
+      spec:
+        username: digani
+        passwordRef: KD_Docker

@@ -1,0 +1,18 @@
+connector:
+  name: Github Pipeline inline
+  identifier: Github_Pipeline_inline
+  description:
+  orgIdentifier: default
+  projectIdentifier: GitX_QS
+  type: Github
+  spec:
+    url: https://github.com/kubernetes/website
+    authentication:
+      type: Http
+      spec:
+        type: UsernameToken
+        spec:
+          username: KapilDigani
+          tokenRef: account.KD_GitHub_PAT
+    executeOnDelegate: false
+    type: Repo

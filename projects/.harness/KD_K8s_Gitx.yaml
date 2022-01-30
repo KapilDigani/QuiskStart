@@ -1,0 +1,12 @@
+connector:
+  name: KD K8s Gitx
+  identifier: KD_K8s_Gitx
+  description:
+  orgIdentifier: default
+  projectIdentifier: GitX_QS
+  type: K8sCluster
+  spec:
+    credential:
+      type: InheritFromDelegate
+    delegateSelectors:
+    - kd1-gcp
